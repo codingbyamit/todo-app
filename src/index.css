@@ -1,13 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu:wght@300&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #60d2d2, #4e90e4);
+    padding: 5%;
+}
+.todo-app {
+    width: 100%;
+    min-width: 50%;
+    min-height: 75vh;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+.todo-app h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.todo-app input {
+    width: 80%;
+    padding: 3px 10px;
+    margin-right: 5px;
+    font-size: 1rem;
+    outline: none;
+    font-weight: 100;
+}
+.add-todo,
+.delete-todo {
+    border-radius: 5px;
+    font-size: 1.3rem;
+    padding: 3px 15px;
+    background-color: #8e4ae8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.todo-app ul {
+    margin-top: 10px;
+}
+.todo-app ul li {
+    list-style: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: #f2f2f2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.single-todo p {
+    font-size: 1.1rem;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+}
+.lists li {
+    margin-right: 5px;
+    width: 85%;
+}
+.lists button {
+    background-color: #e64d3e;
+}
+.clear-btn {
+    background-color: rgba(255, 0, 0, 0.918);
+    width: 100%;
+    bottom: 20px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    
 }
